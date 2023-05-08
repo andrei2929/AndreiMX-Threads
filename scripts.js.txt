@@ -1,0 +1,18 @@
+document.addEventListener("DOMContentLoaded", () => {
+    const threadBoxes = document.querySelectorAll(".thread-box");
+
+    threadBoxes.forEach((threadBox) => {
+        const tweetUrl = threadBox.dataset.tweetUrl;
+        loadTweetEmbed(threadBox, tweetUrl);
+    });
+});
+
+function loadTweetEmbed(container, tweetUrl) {
+    const tweetId = tweetUrl.split("/").pop();
+    const embedUrl = `https://platform.twitter.com/embed/Tweet.html?id=${tweetId}&conversation=none&cards=hidden`;
+
+    container.innerHTML = `
+        <blockquote class="twitter-tweet">
+            <a href="${embedUrl}"></a>
+        </blockquote>`;
+}

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Your Twitter Threads</h1>
+    <div id="threadContainer" class="thread-container">
+        <!-- Add a div for each of your threads with a data-tweet-url attribute -->
+        <div class="thread-box" data-tweet-url="https://twitter.com/AndreiMX_/status/1655603548841971712?s=20"></div>
+        <div class="thread-box" data-tweet-url="https://twitter.com/AndreiMX_/status/1654493683222192133?s=20"></div>
+        <div class="thread-box" data-tweet-url="https://twitter.com/AndreiMX_/status/1653795219975081984?s=20"></div>
+        <div class="thread-box" data-tweet-url="https://twitter.com/AndreiMX_/status/1653081891745206274?s=20"></div>
+        <div class="thread-box" data-tweet-url="https://twitter.com/AndreiMX_/status/1650515035276337155?s=20"></div>
+    </div>
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>
